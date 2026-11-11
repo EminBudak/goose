@@ -1,0 +1,50 @@
+{
+  "name": "wiro",
+  "engine": "openai",
+  "display_name": "Wiro AI",
+  "description": "Hosted gateway for GPT, Claude, Gemini, Grok, DeepSeek, Qwen and other models through one OpenAI-compatible API key, billed per call from a prepaid Wiro wallet",
+  "api_key_env": "WIRO_API_KEY",
+  "base_url": "https://llm.wiro.ai/v1",
+  "dynamic_models": true,
+  "supports_streaming": true,
+  "model_doc_link": "https://wiro.ai/models?categories=llm-tool-call",
+  "setup_steps": [
+    "Sign up at https://wiro.ai and add credit to your wallet",
+    "Create a project at https://wiro.ai/panel/project/new and copy its API key",
+    "Paste the key above as WIRO_API_KEY"
+  ],
+  "models": [
+    {
+      "name": "openai/gpt-6-1-sol",
+      "context_limit": 1050000
+    },
+    {
+      "name": "claude/opus-5-5",
+      "context_limit": 1000000
+    },
+    {
+      "name": "claude/sonnet-5",
+      "context_limit": 1000000
+    },
+    {
+      "name": "google/gemini-3-pro",
+      "context_limit": 1048576
+    },
+    {
+      "name": "xai/grok-4-5",
+      "context_limit": 500000
+    },
+    {
+      "name": "deepseek/v4-1-flash",
+      "context_limit": 1000000
+    },
+    {
+      "name": "glm/5-3",
+      "context_limit": 1000000
+    },
+    {
+      "name": "openai/gpt-5-4-mini",
+      "context_limit": 400000
+    }
+  ]
+}
